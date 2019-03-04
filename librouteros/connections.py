@@ -4,7 +4,7 @@ from socket import SHUT_RDWR, error as SOCKET_ERROR, timeout as SOCKET_TIMEOUT
 from struct import pack, unpack
 from logging import getLogger, NullHandler
 
-from librouteros.exceptions import ConnectionError, FatalError
+from .exceptions import ConnectionError, FatalError
 
 LOGGER = getLogger('librouteros')
 LOGGER.addHandler(NullHandler())

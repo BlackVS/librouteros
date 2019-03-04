@@ -2,7 +2,7 @@
 
 from posixpath import join as pjoin
 
-from librouteros.exceptions import TrapError, MultiTrapError
+from .exceptions import TrapError, MultiTrapError
 
 
 class Parser:

@@ -6,10 +6,10 @@ try:
 except ImportError:
     from chainmap import ChainMap
 
-from librouteros.exceptions import TrapError, FatalError, ConnectionError, MultiTrapError
-from librouteros.connections import ApiProtocol, SocketTransport
-from librouteros.login import login_plain, login_token
-from librouteros.api import Api
+from .exceptions import TrapError, FatalError, ConnectionError, MultiTrapError
+from .connections import ApiProtocol, SocketTransport
+from .login import login_plain, login_token
+from .api import Api
 
 
 defaults = {
